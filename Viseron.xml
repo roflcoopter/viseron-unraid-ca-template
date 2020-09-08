@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Viseron</Name>
+  <Repository>roflcoopter/viseron</Repository>
+  <Registry>https://hub.docker.com/r/roflcoopter/viseron/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://hub.docker.com/r/roflcoopter/viseron/</Support>
+  <Project/>
+  <Overview>Viseron is a self-hosted, local only NVR implemented in Python. The goal is ease of use while also leveraging hardware acceleration for minimal system load.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1599216786</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Viseron is a self-hosted, local only NVR implemented in Python. The goal is ease of use while also leveraging hardware acceleration for minimal system load.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/viseron-recordings/</HostDir>
+      <ContainerDir>/recordings</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/viseron-config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Recordings Path" Target="/recordings" Default="" Mode="rw" Description="Container Path: /recordings" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/viseron-recordings/</Config>
+  <Config Name="Config Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/viseron-config</Config>
+</Container>
