@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
-  <Support>https://hub.docker.com/r/roflcoopter/viseron/</Support>
+  <Support>https://forums.unraid.net/topic/96774-support-viseron-a-self-hosted-nvr-with-object-detection/</Support>
   <Project/>
   <Overview>Viseron is a self-hosted, local only NVR implemented in Python. The goal is ease of use while also leveraging hardware acceleration for minimal system load.</Overview>
   <Category/>
