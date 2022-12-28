@@ -6,20 +6,20 @@
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/96774-support-viseron-a-self-hosted-nvr-with-object-detection/</Support>
-  <Project/>
-  <Overview>Viseron is a self-hosted, local only NVR implemented in Python. The goal is ease of use while also leveraging hardware acceleration for minimal system load.</Overview>
-  <Category/>
-  <WebUI/>
+  <Project>https://viseron.netlify.app/</Project>
+  <Overview>Self-hosted, local only NVR and AI Computer Vision software. With features such as object detection, motion detection, face recognition and more, it gives you the power to keep an eye on your home, office or any other place you want to monitor.</Overview>
+  <Category>HomeAutomation: Security:</Category>
+  <WebUI>http://[IP]:[PORT:8888]/</WebUI>
   <TemplateURL/>
-  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <Icon>https://github.com/roflcoopter/viseron/raw/master/docs/static/img/viseron-logo.svg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1599216786</DateInstalled>
   <DonateText/>
-  <DonateLink/>
+  <DonateLink>https://github.com/sponsors/roflcoopter?frequency=recurring&sponsor=roflcoopter</DonateLink>
   <Description>Viseron is a self-hosted, local only NVR implemented in Python. The goal is ease of use while also leveraging hardware acceleration for minimal system load.</Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -39,6 +39,9 @@
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Recordings Path" Target="/recordings" Default="" Mode="rw" Description="Container Path: /recordings" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/viseron-recordings/</Config>
-  <Config Name="Config Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/viseron-config</Config>
+  <Config Name="Recordings Path" Target="/recordings" Default="" Mode="rw" Description="Container Path: /recordings" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/viseron-recordings/</Config>
+  <Config Name="Config Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/viseron-config</Config>
+  <Config Name="WebUI Port" Description="Default Container Port: 8888 (can be changed in Viseron config.yaml)" Target="8888" Default="" Mode="tcp" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
+  <Config Name="PUID" Description="User identifier" Target="PUID" Default="0" Mode="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">0</Config>
+  <Config Name="PGID" Description="Group identifier" Target="PGID" Default="0" Mode="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">0</Config>
 </Container>
