@@ -19,7 +19,7 @@
   <CPUset/>
   <DateInstalled>1599216786</DateInstalled>
   <DonateText/>
-  <DonateLink>https://github.com/sponsors/roflcoopter?frequency=recurring&sponsor=roflcoopter</DonateLink>
+  <DonateLink/>
   <Description>With features such as object detection, motion detection, face recognition and more, it gives you the power to keep an eye on your home, office or any other place you want to monitor.</Description>
   <Networking>
     <Mode>bridge</Mode>
