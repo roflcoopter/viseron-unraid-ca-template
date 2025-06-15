@@ -13,7 +13,7 @@
   <Category>HomeAutomation: Security:</Category>
   <WebUI>http://[IP]:[PORT:8888]/</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/roflcoopter/viseron/raw/master/docs/static/img/viseron-logo.svg</Icon>
+  <Icon>https://github.com/roflcoopter/viseron/raw/master/docs/static/img/viseron-logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
