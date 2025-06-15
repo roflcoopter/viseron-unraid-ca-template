@@ -27,8 +27,23 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/viseron-recordings/</HostDir>
-      <ContainerDir>/recordings</ContainerDir>
+      <HostDir>/mnt/user/appdata/viseron-segments/</HostDir>
+      <ContainerDir>/segments</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/viseron-snapshots/</HostDir>
+      <ContainerDir>/snapshots</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/viseron-thumbnails/</HostDir>
+      <ContainerDir>/thumbnails</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/viseron-event-clips/</HostDir>
+      <ContainerDir>/event_clips</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
@@ -39,7 +54,6 @@
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Recordings Path" Target="/recordings" Default="" Mode="rw" Description="Container Path: /recordings" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/viseron-recordings/</Config>
   <Config Name="Config Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/viseron-config</Config>
   <Config Name="WebUI Port" Description="Default Container Port: 8888 (can be changed in Viseron config.yaml)" Target="8888" Default="" Mode="tcp" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
   <Config Name="PUID" Description="User identifier" Target="PUID" Default="0" Mode="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">0</Config>
